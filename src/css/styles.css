@@ -12056,7 +12056,6 @@ body,
   display: flex;
   align-items: center;
   gap: 0.25em;
-  opacity: 0.8;
 }
 .ab-page-header__left a, .ab-page-header__right a {
   color: #FFF;
