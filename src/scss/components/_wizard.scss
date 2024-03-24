@@ -1,0 +1,49 @@
+.#{$prefix}wizard {
+  &__container {
+    position: relative;
+    text-align: center;
+    margin-inline: spacing(4);
+    margin-block-start: spacing(2);
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 1px;
+      background-color: $gray-200;
+      left: 0;
+      right: 0;
+      top: 50%;
+      z-index: -1;
+    }
+  }
+
+  &__item {
+    width: spacing(4);
+    height: spacing(4);
+    border-radius: 50%;
+    background-color: $gray-100;
+    border: 1px solid $gray-300;
+    line-height: spacing(4);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Added cursor pointer */
+
+    &.active {
+      background-color: $green-100;
+      border: 1px solid $green-300;
+    }
+  }
+}
+
+.step-line {
+  position: absolute;
+  top: 16px;
+  left: 50px;
+  width: calc(100% - 100px);
+  height: 2px;
+  background-color: $green-200;
+  z-index: -1;
+}

@@ -1,0 +1,11 @@
+.#{$prefix}page {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 54px 1fr auto;
+  column-gap: 0;
+  row-gap: 0;
+
+  &__content {
+    height: 100%;
+  }
+}

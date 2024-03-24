@@ -1,0 +1,39 @@
+.#{$prefix}page-header {
+  background-color: $primary;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  height: spacing(7);
+  padding-inline: spacing(1);
+  gap: spacing(2.5);
+
+  color: $white;
+
+  &__title {
+    // flex: 1;
+    font-weight: 700;
+    white-space: nowrap;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &__left,
+  &__right {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: spacing(0.5);
+
+    a {
+      color: $white;
+      text-decoration: none;
+
+      display: flex;
+      align-items: center;
+      gap: spacing(0.5);
+    }
+  }
+}

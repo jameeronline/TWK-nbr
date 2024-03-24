@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="ab-container">
+        <!-- PAGE - START -->
+        <div class="ab-page">
+          <div class="ab-page-header">
+            <div class="ab-page-header__left">
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-arrow-left"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+                  />
+                </svg>
+                <span> Back </span>
+              </a>
+            </div>
+            <div class="ab-page-header__title">New Born Registration</div>
+            <div class="ab-page-header__right">
+              <a href="#"><span> Cancel </span></a>
+            </div>
+          </div>
+          <div class="ab-page-content">
+            <!-- Progressbar(wizard) -->
+            <div class="ab-wizard">
+              <div class="ab-wizard__container d-flex justify-content-between">
+                <div class="ab-wizard__item active">1</div>
+                <div class="ab-wizard__item">2</div>
+                <div class="ab-wizard__item">3</div>
+              </div>
+            </div>
+
+            <!-- Page Title -->
+            <div class="ab-page-title">
+              <span>Select Newborn</span>
+            </div>
+
+            <!-- Page Notes -->
+            <div class="ab-page-notes">
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+                class="text-danger"
+                ><small>Read more information about the service here</small></a
+              >
+            </div>
+
+            <!-- Modal -->
+            <div
+              class="modal ab-modal fade"
+              id="staticBackdrop"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="modal-title fw-bold" id="staticBackdropLabel">
+                      Terms and Conditions
+                    </span>
+                    <a
+                      href="javascript:void(0)"
+                      type="button"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                      class="modal-close"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                        class="bi bi-x-lg"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="modal-body">
+                    <strong class="mb-2 d-block">1. Introduction</strong>
+                    <p>
+                      <small>
+                        Absher platform is the electronic platform of the
+                        Ministry of Interior. It aims to provide the services of
+                        the Saudi Ministry of Interior digitally and in an
+                        integrated manner to citizens, residents and visitors,
+                        by taking advantage of technical capabilities and
+                        harnessing modern technologies.
+                      </small>
+                    </p>
+
+                    <strong class="mb-2 d-block">2. Service Description</strong>
+                    <p>
+                      <small>
+                        This provides an excellent user experience through
+                        automated services with high reliability, security and
+                        efficiency.
+                      </small>
+                    </p>
+
+                    <strong class="mb-2 d-block">3. Terms of Use</strong>
+                    <small>
+                      Absher platform is the electronic platform of the Ministry
+                      of Interior. It aims to provide the services of the Saudi
+                      Ministry of Interior digitally and in an integrated manner
+                      to citizens, residents and visitors, by taking advantage
+                      of technical capabilities and harnessing modern
+                      technologies.
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="ab-list-group">
+              <li class="ab-list-group__item">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="listGroupRadio"
+                  value=""
+                  id="firstRadio"
+                  checked
+                />
+                <label class="" for="firstRadio">
+                  <h6 class="fs-6 fw-bold mb-2">NewBorn Child Name 1</h6>
+                  <small>
+                    <ul class="ab-detailed-list ab-detailed-list__inline">
+                      <li>
+                        <span>Mother name:</span>
+                        <span>Noorah</span>
+                      </li>
+                      <li>
+                        <span>Gender:</span>
+                        <span>Male</span>
+                      </li>
+                    </ul>
+                  </small>
+                </label>
+              </li>
+              <li class="ab-list-group__item">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="listGroupRadio"
+                  value=""
+                  id="secondRadio"
+                />
+                <label class="" for="secondRadio">
+                  <h6 class="fs-6 fw-bold mb-2">NewBorn Child Name 2</h6>
+                  <small>
+                    <ul class="ab-detailed-list ab-detailed-list__inline">
+                      <li>
+                        <span>Mother name:</span>
+                        <span>Noorah</span>
+                      </li>
+                      <li>
+                        <span>Gender:</span>
+                        <span>Male</span>
+                      </li>
+                    </ul>
+                  </small>
+                </label>
+              </li>
+              <li class="ab-list-group__item">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="listGroupRadio"
+                  value=""
+                  id="thirdRadio"
+                />
+                <label class="" for="thirdRadio">
+                  <h6 class="fs-6 fw-bold mb-2">NewBorn Child Name 3</h6>
+                  <small>
+                    <ul class="ab-detailed-list ab-detailed-list__inline">
+                      <li>
+                        <span>Mother name:</span>
+                        <span>Noorah</span>
+                      </li>
+                      <li>
+                        <span>Gender:</span>
+                        <span>Male</span>
+                      </li>
+                    </ul>
+                  </small>
+                </label>
+              </li>
+              <li class="ab-list-group__item">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="listGroupRadio"
+                  value=""
+                  id="fourthRadio"
+                />
+                <label class="" for="fourthRadio">
+                  <h6 class="fs-6 fw-bold mb-2">NewBorn Child Name 4</h6>
+                  <small>
+                    <ul class="ab-detailed-list ab-detailed-list__inline">
+                      <li>
+                        <span>Mother name:</span>
+                        <span>Noorah</span>
+                      </li>
+                      <li>
+                        <span>Gender:</span>
+                        <span>Male</span>
+                      </li>
+                    </ul>
+                  </small>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="ab-page-footer">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary btn-lg" type="button">
+                Review Details
+              </button>
+              <button class="btn btn-light" type="button">Cancel</button>
+            </div>
+          </div>
+        </div>
+        <!-- PAGE - START -->
+      </div>
+    </div>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

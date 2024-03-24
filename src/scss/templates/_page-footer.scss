@@ -1,0 +1,6 @@
+//@use "../config" as *;
+//@use "../theme/" as *;
+
+.#{$prefix}page-footer {
+  padding: spacing(1);
+}
