@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -43,6 +43,7 @@
                 <div class="ab-wizard__item active">1</div>
                 <div class="ab-wizard__item">2</div>
                 <div class="ab-wizard__item">3</div>
+                <div class="ab-wizard__item">4</div>
               </div>
             </div>
 
@@ -57,14 +58,13 @@
                 href="#"
                 data-bs-toggle="modal"
                 data-bs-target="#staticBackdrop"
-                class="text-danger"
-                ><small>Read more information about the service here</small></a
+                class="text-danger font-sm"
+                >Read more information about the service here</a
               >
             </div>
-
-            <!-- Modal -->
+            <!-- Service Information Modal -->
             <div
-              class="modal ab-modal fade"
+              class="modal fade"
               id="staticBackdrop"
               data-bs-backdrop="static"
               data-bs-keyboard="false"
@@ -101,35 +101,31 @@
                   </div>
                   <div class="modal-body">
                     <strong class="mb-2 d-block">1. Introduction</strong>
-                    <p>
-                      <small>
-                        Absher platform is the electronic platform of the
-                        Ministry of Interior. It aims to provide the services of
-                        the Saudi Ministry of Interior digitally and in an
-                        integrated manner to citizens, residents and visitors,
-                        by taking advantage of technical capabilities and
-                        harnessing modern technologies.
-                      </small>
-                    </p>
-
-                    <strong class="mb-2 d-block">2. Service Description</strong>
-                    <p>
-                      <small>
-                        This provides an excellent user experience through
-                        automated services with high reliability, security and
-                        efficiency.
-                      </small>
-                    </p>
-
-                    <strong class="mb-2 d-block">3. Terms of Use</strong>
-                    <small>
+                    <p class="font-sm">
                       Absher platform is the electronic platform of the Ministry
                       of Interior. It aims to provide the services of the Saudi
                       Ministry of Interior digitally and in an integrated manner
                       to citizens, residents and visitors, by taking advantage
                       of technical capabilities and harnessing modern
                       technologies.
-                    </small>
+                    </p>
+
+                    <strong class="mb-2 d-block">2. Service Description</strong>
+                    <p class="font-sm">
+                      This provides an excellent user experience through
+                      automated services with high reliability, security and
+                      efficiency.
+                    </p>
+
+                    <strong class="mb-2 d-block">3. Terms of Use</strong>
+                    <p class="font-sm">
+                      Absher platform is the electronic platform of the Ministry
+                      of Interior. It aims to provide the services of the Saudi
+                      Ministry of Interior digitally and in an integrated manner
+                      to citizens, residents and visitors, by taking advantage
+                      of technical capabilities and harnessing modern
+                      technologies.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -234,6 +230,92 @@
                 </label>
               </li>
             </ul>
+
+            <!-- Page Error Management -->
+            <div class="ab-error-handling">
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#errorHandlingModal"
+                class="text-danger font-sm"
+                >Cannot Proceed(for testing)</a
+              >
+              <!-- Service Information Modal -->
+              <div
+                class="modal fade"
+                id="errorHandlingModal"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="errorHandlingModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-fullscreen">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span
+                        class="modal-title fw-bold sr-only"
+                        id="errorHandlingModalLabel"
+                      >
+                        Error
+                      </span>
+                      <a
+                        href="javascript:void(0)"
+                        type="button"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                        class="modal-close"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-x-lg"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="modal-body">
+                      <div class="ab-error-msg">
+                        <div class="ab-error-msg__content">
+                          <div class="ab-error-msg__media">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="64"
+                              height="64"
+                              fill="currentColor"
+                              class="bi bi-x-circle"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                              />
+                              <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+                              />
+                            </svg>
+                          </div>
+                          <div class="ab-error-msg__text">
+                            <h4>Cannot Proceed</h4>
+                            <p class="font-sm">
+                              Sorry! The registration of new born cannot be
+                              proceeded; as it has exceeded the duration of 360
+                              days from the date of birth. Please contact
+                              Al-Ahwal Branches.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="ab-page-footer">
             <div class="d-grid gap-2">

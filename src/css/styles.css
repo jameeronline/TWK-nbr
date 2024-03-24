@@ -11987,18 +11987,18 @@ body,
   flex: 1;
 }
 
-.ab-modal .modal-header {
+.modal-header {
   background-color: #008550;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
   height: 3.5em;
-  padding-inline: 0.5em;
+  padding-inline: 1em;
   gap: 1.25em;
   color: #FFF;
 }
-.ab-modal .modal-title {
+.modal-title {
   white-space: nowrap;
   text-align: center;
   text-overflow: ellipsis;
@@ -12007,6 +12007,30 @@ body,
 
 .modal-close {
   color: #fff;
+}
+
+.ab-error-msg {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.ab-error-msg__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  align-items: center;
+}
+.ab-error-msg__media {
+  color: #dc3545;
+}
+.ab-error-msg__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .ab-page-header {
@@ -12032,6 +12056,7 @@ body,
   display: flex;
   align-items: center;
   gap: 0.25em;
+  opacity: 0.8;
 }
 .ab-page-header__left a, .ab-page-header__right a {
   color: #FFF;
@@ -12060,6 +12085,10 @@ body,
 .ab-page-notes {
   text-align: center;
   padding-block-end: 0.75em;
+}
+
+.font-sm {
+  font-size: 0.875rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

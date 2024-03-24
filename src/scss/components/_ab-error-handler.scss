@@ -1,0 +1,26 @@
+.#{$prefix}error-msg {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: spacing(3);
+    align-items: center;
+  }
+
+  &__media {
+    color: $red;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: spacing(0.5);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

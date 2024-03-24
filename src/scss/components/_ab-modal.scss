@@ -1,27 +1,27 @@
-.#{$prefix}modal {
-  .modal {
-    &-header {
-      background-color: $primary;
+//.#{$prefix}modal {
+.modal {
+  &-header {
+    background-color: $primary;
 
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: nowrap;
-      height: spacing(7);
-      padding-inline: spacing(1);
-      gap: spacing(2.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: spacing(7);
+    padding-inline: spacing(2);
+    gap: spacing(2.5);
 
-      color: $white;
-    }
+    color: $white;
+  }
 
-    &-title {
-      white-space: nowrap;
-      text-align: center;
-      text-overflow: ellipsis;
-      overflow: hidden;
-    }
+  &-title {
+    white-space: nowrap;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 }
+//}
 
 .modal-close {
   color: #fff;
