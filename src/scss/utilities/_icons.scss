@@ -1,0 +1,21 @@
+.icon {
+  &-sm {
+    font-size: $font-size-base;
+  }
+
+  &-md {
+    font-size: $font-size-base * 1.5;
+  }
+
+  &-lg {
+    font-size: $font-size-base * 2;
+  }
+
+  &-xl {
+    font-size: $font-size-base * 3;
+  }
+
+  &-xxl {
+    font-size: $font-size-base * 4;
+  }
+}

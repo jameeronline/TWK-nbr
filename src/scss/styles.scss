@@ -4,8 +4,11 @@
 
 // Import all of Bootstrap's CSS
 //@import "bootstrap/scss/bootstrap";
-
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+//Icons
+$bootstrap-icons-font-dir: "../../node_modules/bootstrap-icons/font/fonts";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons";
 
 //TWK Components
 @import "./layout/";

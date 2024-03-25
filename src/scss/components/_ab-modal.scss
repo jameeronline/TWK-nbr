@@ -1,4 +1,3 @@
-//.#{$prefix}modal {
 .modal {
   &-header {
     background-color: $primary;
@@ -20,9 +19,9 @@
     text-overflow: ellipsis;
     overflow: hidden;
   }
-}
-//}
 
-.modal-close {
-  color: #fff;
+  &-close {
+    color: #fff;
+    font-size: $font-size-base * 1.5;
+  }
 }

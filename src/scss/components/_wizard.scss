@@ -29,11 +29,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer; /* Added cursor pointer */
+    overflow: hidden;
 
     &.active {
       background-color: $green-100;
       border: 1px solid $green-300;
+    }
+
+    &.completed {
+      color: $white;
+
+      background-color: $green-400;
+      border: 1px solid $green-400;
+
+      &::before {
+        content: "\f272";
+        font-family: $bootstrap-icons-font;
+      }
+
+      span {
+        display: none;
+      }
     }
   }
 }

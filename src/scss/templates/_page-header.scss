@@ -36,5 +36,9 @@
       align-items: center;
       gap: spacing(0.5);
     }
+
+    .bi {
+      font-size: $font-size-base * 1.5;
+    }
   }
 }

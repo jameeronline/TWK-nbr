@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="ab-container">
+        <!-- PAGE - START -->
+        <div class="ab-page">
+          <div class="ab-page-header">
+            <div class="ab-page-header__left">
+              <a href="#">
+                <i class="bi bi-arrow-left"></i>
+                <span> Back </span>
+              </a>
+            </div>
+            <div class="ab-page-header__title">Register Newborn</div>
+            <div class="ab-page-header__right">
+              <a href="#"><span> Cancel </span></a>
+            </div>
+          </div>
+          <div class="ab-page-content">
+            <!-- Progressbar(wizard) -->
+            <div class="ab-wizard">
+              <div class="ab-wizard__container d-flex justify-content-between">
+                <div class="ab-wizard__item completed"><span>1</span></div>
+                <div class="ab-wizard__item active"><span>2</span></div>
+                <div class="ab-wizard__item"><span>3</span></div>
+                <div class="ab-wizard__item"><span>4</span></div>
+              </div>
+            </div>
+
+            <!-- Page Title -->
+            <div class="ab-page-title">
+              <span>Newborn Details</span>
+            </div>
+
+            <ul class="ab-list-group">
+              <li class="ab-list-group__item">
+                <div class="ab-content-block">
+                  <h6 class="fs-6 fw-bold mb-2 text-primary">
+                    Registration Details
+                  </h6>
+                  <ul class="ab-detailed-list ab-detailed-list__stack font-sm">
+                    <li>
+                      <span class="text-secondary">Hospital Details</span>
+                      <span class="fw-bold">Name, Region, City</span>
+                    </li>
+                    <li>
+                      <span class="text-secondary">Father Name</span>
+                      <span class="fw-bold">Hussain el-Haque</span>
+                    </li>
+                    <li>
+                      <span class="text-secondary">Father ID Number</span>
+                      <span class="fw-bold d-inline-flex gap-2"
+                        >1234567890
+                        <button
+                          class="btn p-0 text-primary icon-sm js-copy-clipboard"
+                          data-clipboard-text="1234567890"
+                        >
+                          <i class="bi bi-copy"></i>
+                        </button>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="text-secondary">Mother Name</span>
+                      <span class="fw-bold">Aamina el-Haque</span>
+                    </li>
+                    <li>
+                      <span class="text-secondary">Mother ID Number</span>
+                      <span class="fw-bold d-inline-flex gap-2"
+                        >1234567890
+                        <button
+                          class="btn p-0 text-primary icon-sm js-copy-clipboard"
+                          data-clipboard-text="1234567890"
+                        >
+                          <i class="bi bi-copy"></i>
+                        </button>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="ab-list-group__item">
+                <div class="ab-content-block">
+                  <h6 class="fs-6 fw-bold mb-2 text-primary">
+                    Newborn Details
+                  </h6>
+                  <ul class="ab-detailed-list ab-detailed-list__stack font-sm">
+                    <li>
+                      <span class="text-secondary">Name</span>
+                      <span class="fw-bold">Abdullah</span>
+                    </li>
+                    <li>
+                      <span class="text-secondary">Gender</span>
+                      <span class="fw-bold">Male</span>
+                    </li>
+                    <li>
+                      <span class="text-secondary">Date of Delivery</span>
+                      <span class="fw-bold">13/03/2024</span>
+                    </li>
+                    <li>
+                      <span class="text-secondary">Time Delivery</span>
+                      <span class="fw-bold">10.32 AM</span>
+                    </li>
+                    <li>
+                      <span class="text-secondary">Place of Delivery</span>
+                      <span class="fw-bold">Riyadh</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+            <div class="ab-page-notes">
+              <p class="font-sm mb-0">
+                if any of the details are incorrect, please do not proceed and
+                contact the hospital for correction.
+              </p>
+            </div>
+          </div>
+          <div class="ab-page-footer">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary btn-lg" type="button">
+                Select Delivery Address
+              </button>
+              <button class="btn btn-light" type="button">Cancel</button>
+            </div>
+          </div>
+        </div>
+        <!-- PAGE - START -->
+      </div>
+    </div>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

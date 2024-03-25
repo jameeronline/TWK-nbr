@@ -6,4 +6,19 @@
 
   li {
   }
+
+  //Modifiers
+  &__stack {
+    gap: spacing(2.5);
+
+    li {
+      display: flex;
+      flex-direction: column;
+      gap: spacing(0.5);
+    }
+
+    label {
+      font-weight: $font-weight-bold;
+    }
+  }
 }

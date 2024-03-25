@@ -8,5 +8,9 @@
 
 .#{$prefix}page-notes {
   text-align: center;
-  padding-block-end: spacing(1.5);
+  padding: spacing(1.5);
+}
+
+.#{$prefix}content-block {
+  width: 100%;
 }
