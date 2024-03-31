@@ -3,6 +3,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  margin-bottom: 0;
 
   &__item {
     padding: spacing(2);
@@ -16,8 +17,14 @@
       border-bottom-width: 0;
     }
 
-    &:has(input:checked) {
+    &:has(> input:checked) {
       background-color: $gray-100;
+    }
+
+    &:has(> input:disabled) {
+      > label {
+        opacity: 0.5;
+      }
     }
 
     label {

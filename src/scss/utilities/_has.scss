@@ -1,0 +1,11 @@
+.has {
+  &-target {
+    display: none;
+  }
+
+  &-toggle:has(input:checked) {
+    + .has-target {
+      display: initial;
+    }
+  }
+}

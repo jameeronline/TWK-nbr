@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="ab-container">
+        <!-- PAGE - START -->
+        <div class="ab-page">
+          <div class="ab-page-header">
+            <div class="ab-page-header__left">
+              <a href="details.html">
+                <i class="bi bi-arrow-left"></i>
+                <span> Back </span>
+              </a>
+            </div>
+            <div class="ab-page-header__title">Register Newborn</div>
+            <div class="ab-page-header__right">
+              <a href="index.html"><span> Cancel </span></a>
+            </div>
+          </div>
+          <div class="ab-page-content">
+            <!-- Progressbar(wizard) -->
+            <div class="ab-wizard">
+              <div class="ab-wizard__container d-flex justify-content-between">
+                <div class="ab-wizard__item completed"><span>1</span></div>
+                <div class="ab-wizard__item completed"><span>2</span></div>
+                <div class="ab-wizard__item active"><span>3</span></div>
+                <div class="ab-wizard__item"><span>4</span></div>
+              </div>
+            </div>
+
+            <!-- Page Title -->
+            <div class="ab-page-title">
+              <span>Choose Address and Contact Details</span>
+            </div>
+
+            <!-- Page Notes -->
+            <div class="ab-page-notes">
+              <p class="font-sm">
+                The newborn was successfully registered. You are now requesting
+                delivery for their birth certificate.
+              </p>
+            </div>
+
+            <ul class="ab-list-group">
+              <li class="ab-list-group__item">
+                <div class="ab-content-block">
+                  <h6 class="fs-6 fw-bold mb-3 text-primary">
+                    Delivery Address
+                  </h6>
+
+                  <p class="font-sm d-flex gap-3 mb-0 text-secondary">
+                    <i class="bi bi-info-circle fs-5 text-primary"></i>
+                    Choose one of your postal address where you want the
+                    documents to be delivered.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <ul class="ab-list-group">
+                  <li class="ab-list-group__item">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="selectAddress"
+                      value=""
+                      id="firstRadio"
+                      checked
+                    />
+                    <label class="" for="firstRadio">
+                      <span class="fs-6 mb-2">King Fahad, Riyadh 12262</span>
+                    </label>
+                  </li>
+                  <li class="ab-list-group__item">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="selectAddress"
+                      value=""
+                      id="secondRadio"
+                      checked
+                    />
+                    <label class="" for="secondRadio">
+                      <span class="fs-6 mb-2">Tanduf, Riyadh 13311</span>
+                    </label>
+                  </li>
+                  <li class="ab-list-group__item">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="selectAddress"
+                      value=""
+                      id="thirdRadio"
+                      checked
+                    />
+                    <label class="" for="thirdRadio">
+                      <span class="fs-6 mb-2">Al Wizzarat, Riyadh 12621</span>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li class="ab-list-group__item">
+                <div class="ab-content-block">
+                  <h6 class="fs-6 fw-bold mb-3 text-primary">
+                    Contact Details
+                  </h6>
+                  <ul class="ab-detailed-list ab-detailed-list__stack font-sm">
+                    <li>
+                      <span class="text-secondary">Mobile Number</span>
+                      <span class="fw-bold">0512345678</span>
+                    </li>
+                    <li>
+                      <p class="font-sm d-flex gap-3 mb-0 text-secondary">
+                        <i class="bi bi-info-circle fs-5 text-primary"></i>
+                        The mobile no. shout start with 5 and 9 digits in total.
+                        You can edit this anytime.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="">
+                <div class="ab-content-block">
+                  <ul class="ab-list-group">
+                    <li class="ab-list-group__item">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="selectEmail"
+                        value=""
+                        id="selectEmailRadioOne"
+                        checked
+                      />
+                      <label class="" for="selectEmailRadioOne">
+                        <div class="d-flex flex-column">
+                          <span class="text-secondary">Email Address</span>
+                          <span class="fw-bold">example@example.com</span>
+                        </div>
+                      </label>
+                    </li>
+                    <li class="ab-list-group__item has-toggle">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="selectEmail"
+                        value=""
+                        id="selectEmailRadioTwo"
+                        checked
+                      />
+                      <label class="" for="selectEmailRadioTwo">
+                        <span class="fs-6 mb-2" id="addNewEmailAddress"
+                          >Add a New Email Address</span
+                        >
+                      </label>
+                    </li>
+                    <li class="has-target">
+                      <div class="form-group p-3">
+                        <input
+                          type="email"
+                          class="form-control form-control-lg"
+                          placeholder="ex: example@example.com"
+                        />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+            <div class="ab-page-notes">
+              <p class="font-sm mb-0">
+                if your address is incorrect or you want to deliver to a
+                different addres, please contact your postal agency.
+              </p>
+            </div>
+          </div>
+          <div class="ab-page-footer">
+            <div class="d-grid gap-2">
+              <a
+                href="./review-details.html"
+                class="btn btn-primary btn-lg"
+                type="button"
+              >
+                Review Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- PAGE - START -->
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

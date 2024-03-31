@@ -1,8 +1,20 @@
 // Customization
-$white: #FFF;
+$white: #fff;
 $black: #000;
 
-$body-bg: #F8F8F8;
-$body-bg: #FFF;
+$body-bg: #f8f8f8;
+$body-bg: #fff;
 //$body-color: #FF0000;
-$primary: #008550;
+
+//Primary color swatches
+$primary-100: #dbfff1;
+$primary-200: #b3ffe0;
+$primary-300: #66ffc2;
+$primary-400: #00d17d;
+$primary-500: #008550;
+$primary-600: #006b40;
+$primary-700: #005231;
+$primary-800: #00331f;
+$primary-900: #00190f;
+
+$primary: $primary-500;

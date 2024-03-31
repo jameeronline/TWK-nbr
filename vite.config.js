@@ -8,6 +8,7 @@ export default {
       input: {
         main: "./src/index.html",
         details: "./src/details.html",
+        selectAddress: "./src/select-address.html",
       },
     },
   },

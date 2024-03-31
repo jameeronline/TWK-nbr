@@ -42,17 +42,22 @@
 
             <!-- Page Notes -->
             <div class="ab-page-notes">
-              <a
-                href="#"
-                data-bs-toggle="modal"
-                data-bs-target="#staticBackdrop"
-                class="text-danger font-sm"
-                >Read more information about the service here</a
+              <p
+                class="font-sm d-flex align-items-center justify-content-center gap-2 mb-0 text-secondary"
               >
+                <i class="bi bi-info-circle fs-5 text-primary"></i>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  class="text-primary font-sm"
+                  >Read more information about the service here</a
+                >
+              </p>
             </div>
             <!-- Service Information Modal -->
             <div
-              class="modal"
+              class="modal fade"
               id="staticBackdrop"
               data-bs-backdrop="static"
               data-bs-keyboard="false"
@@ -141,6 +146,7 @@
                   name="listGroupRadio"
                   value=""
                   id="secondRadio"
+                  disabled
                 />
                 <label class="" for="secondRadio">
                   <h6 class="fs-6 fw-bold mb-2">NewBorn Child Name 2</h6>
@@ -165,6 +171,7 @@
                   name="listGroupRadio"
                   value=""
                   id="thirdRadio"
+                  disabled
                 />
                 <label class="" for="thirdRadio">
                   <h6 class="fs-6 fw-bold mb-2">NewBorn Child Name 3</h6>
@@ -189,6 +196,7 @@
                   name="listGroupRadio"
                   value=""
                   id="fourthRadio"
+                  disabled
                 />
                 <label class="" for="fourthRadio">
                   <h6 class="fs-6 fw-bold mb-2">NewBorn Child Name 4</h6>
@@ -219,7 +227,7 @@
               >
               <!-- Service Error Modal -->
               <div
-                class="modal"
+                class="modal fade"
                 id="errorHandlingModal"
                 data-bs-backdrop="static"
                 data-bs-keyboard="false"
@@ -272,19 +280,21 @@
           <div class="ab-page-footer">
             <div class="d-grid gap-2">
               <a
-                href="details.html"
+                href="./details.html"
                 class="btn btn-primary btn-lg"
                 type="button"
               >
                 Review Details
               </a>
-              <button class="btn btn-light" type="button">Cancel</button>
             </div>
           </div>
         </div>
         <!-- PAGE - START -->
       </div>
     </div>
-    <script type="module" src="/js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <script src="js/twkhelper.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

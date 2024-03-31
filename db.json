@@ -1,0 +1,352 @@
+{
+  "mock_endpoints": [
+    {
+      "path": "/user_data/user_type",
+      "return": {
+        "user_type": 1
+      }
+    },
+    {
+      "path": "/user_data/marital_status",
+      "return": {
+        "marital_status": "single"
+      }
+    },
+    {
+      "path": "/user_data/health_status",
+      "return": {
+        "health_status": "healthy"
+      }
+    },
+    {
+      "path": "/user_data/user_id",
+      "return": {
+        "user_id": 100010111
+      }
+    },
+    {
+      "path": "/user_data/full_name",
+      "return": {
+        "full_name_ar": "الاسم عربي",
+        "full_name_en": "English name"
+      }
+    },
+    {
+      "path": "/user_data/blood_type",
+      "return": {
+        "blood_type": 1
+      }
+    },
+    {
+      "path": "/user_data/degree_type",
+      "return": {
+        "degree_type": "تعليم ابتدائي"
+      }
+    },
+    {
+      "path": "/user_data/user_location",
+      "return": {
+        "location": {
+          "latitude": 24.7136,
+          "longitude": 46.6753
+        }
+      }
+    },
+    {
+      "path": "/user_data/national_address",
+      "return": {
+        "national_addresses": [
+          {
+            "details_ar": {
+              "additional_no": "7559",
+              "building_no": "3693",
+              "city": "الرياض",
+              "district_name": "حي المروج",
+              "section_type": 9,
+              "short_address": "RHGA3693",
+              "street_name": "بني قيس",
+              "zip_code": "12284"
+            },
+            "details_en": {
+              "additional_no": "7559",
+              "building_no": "3693",
+              "city": "RIYADH",
+              "district_name": "Al Muruj Dist.",
+              "section_type": 9,
+              "short_address": "RHGA3693",
+              "street_name": "Bani Qais",
+              "zip_code": "12284"
+            },
+            "is_primary_address": true,
+            "summary": {
+              "address_counter": "Address 1",
+              "latitude": 24.75986064,
+              "longitude": 46.66723173,
+              "section_type": 10,
+              "address_ar": "RHGA3693, 3693, حي المروج, 7559, بني قيس, الرياض",
+              "address_en": "RHGA3693, 3693, Al Muruj Dist., 7559, Bani Qais, RIYADH"
+            }
+          },
+          {
+            "details_ar": {
+              "additional_no": "6970",
+              "building_no": "2883",
+              "city": "الرياض",
+              "district_name": "",
+              "section_type": 9,
+              "short_address": "",
+              "street_name": "وادي رقوان",
+              "zip_code": "12395"
+            },
+            "detailsEn": {
+              "additional_no": "6970",
+              "building_no": "2883",
+              "city": "RIYADH",
+              "district_name": "",
+              "section_type": 9,
+              "short_address": "",
+              "street_name": "Wadi Raqwan",
+              "zip_code": "12395"
+            },
+            "isPrimaryAddress": false,
+            "summary": {
+              "address_counter": "Address 2",
+              "latitude": 24.7326068545263,
+              "longitude": 46.5989362244768,
+              "section_type": 10,
+              "address_ar": ", 2883, , 6970, وادي رقوان, الرياض",
+              "address_en": ", 2883, , 6970, Wadi Raqwan, RIYADH"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "path": "/user_data/nationality_name",
+      "return": {
+        "nationality_name": "Kingdom of Saudi Arabia"
+      }
+    },
+    {
+      "path": "/user_data/nationality_iso",
+      "return": {
+        "nationality_iso": "SA"
+      }
+    },
+    {
+      "path": "/user_data/occupation",
+      "return": {
+        "occupation": "programmer"
+      }
+    },
+    {
+      "path": "/user_data/mobile_number",
+      "return": {
+        "mobile_number": "123123123123"
+      }
+    },
+    {
+      "path": "/user_data/birth_date",
+      "return": {
+        "birth_date": "2023-10-28"
+      }
+    },
+    {
+      "path": "/user_data/dependents",
+      "return": {
+        "dependents": [
+          {
+            "user_id": 0,
+            "full_name": "string",
+            "user_photo": {
+              "type": "image",
+              "mime_type": "string",
+              "data": "string"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "path": "/user_data/gender",
+      "return": {
+        "gender": 1
+      }
+    },
+    {
+      "path": "/authenticate/biometric",
+      "return": {
+        "authorized": true
+      }
+    },
+    {
+      "path": "/authenticate/generatetoken",
+      "return": {
+        "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYXRpb25hbElkIjoiMTAwMDAwMTIxMiIsImV4cCI6MTczODQxMDUzMywiaXNzIjoiVGF3YWtrYWxuYSIsImF1ZCI6Ik1pbmlTZXJ2aWNlMSJ9.AIN4Y6YtTBJLZLKcjtzMDlqSB42n0gP7YwMaqwnIxSudSKg0EChZLp4MElVl2LAkSq96YuSQsPZebmhhIuPsq7GybnhgVHsRi1BnWKG5ZTbZAbUxTX0-iMBjUHmbEWOlQYyn5Kxh9bfORY1yc8G6StPRV0P34xBrjEIKZFCUsEKsKUM02Y1eeByrCiCxlCHf9OBncqzkdpx-mYuNmLSNgCjNQ5AXzGP4ywwytg9cdCS4POlTJ4H6AqjVXCG5ZkAgs68XR_Q_-Wfp4o3K7DXUR9IjpkFA5TNI-F09m7Or_n0q-swSqR1FxOvDLVsBXWaqP0Rr9IV7S7f8gvS3KmYcxw"
+      }
+    },
+    {
+      "path": "/user_data/violations/unpaid",
+      "return": {
+        "violations": [
+          {
+            "manufacturer": "فورد",
+            "plate_number": "2018 J  U  L",
+            "street_speed": "0",
+            "total_fine_amount": "150",
+            "vehicle_model": "فوكس",
+            "vehicle_speed": "0",
+            "vehicle_type": "PRIVATE",
+            "violation_city": "رياض",
+            "violation_date_time": " 12:30 م",
+            "violation_number": "1006651",
+            "violation_status": "PAID VIOLATION",
+            "violation_type": "IMPROPER USE OF THE HORN"
+          },
+          {
+            "manufacturer": "فورد",
+            "plate_number": "2018 J  U  L",
+            "street_speed": "0",
+            "total_fine_amount": "100",
+            "vehicle_model": "فوكس",
+            "vehicle_speed": "0",
+            "vehicle_type": "PRIVATE",
+            "violation_city": "رياض",
+            "violation_date_time": " 12:30 م",
+            "violation_number": "1006651",
+            "violation_status": "PAID VIOLATION",
+            "violation_type": "Using Unauthorized Devices or Improper Stickers or Signs"
+          }
+
+        ]
+      }
+    },
+    {
+      "path": "/user_data/violations/paid",
+      "return": {
+        "violations": [
+          {
+            "manufacturer": "فورد",
+            "plate_number": "2018 J  U  L",
+            "street_speed": "0",
+            "total_fine_amount": "150",
+            "vehicle_model": "فوكس",
+            "vehicle_speed": "0",
+            "vehicle_type": "PRIVATE",
+            "violation_city": "رياض",
+            "violation_date_time": " 12:30 م",
+            "violation_number": "1006651",
+            "violation_status": "UNPAID VIOLATION",
+            "violation_type": "IMPROPER USE OF THE HORN"
+          },
+          {
+            "manufacturer": "فورد",
+            "plate_number": "2018 J  U  L",
+            "street_speed": "0",
+            "total_fine_amount": "100",
+            "vehicle_model": "فوكس",
+            "vehicle_speed": "0",
+            "vehicle_type": "PRIVATE",
+            "violation_city": "رياض",
+            "violation_date_time": " 12:30 م",
+            "violation_number": "1006651",
+            "violation_status": "UNPAID VIOLATION",
+            "violation_type": "Using Unauthorized Devices or Improper Stickers or Signs"
+          }
+
+        ]
+      }
+    },
+    {
+      "path": "/user_data/vehicles",
+      "return": {
+        "vehicles": [
+          {
+            "plate_number": "string",
+            "registration_type": "string",
+            "major_color": "string",
+            "model": "string",
+            "status": "string",
+            "model_year": "string",
+            "identification_number": "string",
+            "serial_number": "string",
+            "load_capacity": "string",
+            "weight": "string",
+            "registration_expiry_date": "string",
+            "manufacturer": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "/user_data/user_photo",
+      "return": {
+        "type": "image",
+        "data": "user_photo"
+      }
+    },
+    {
+      "path": "/capabilities",
+      "return": {
+        "device_model": "samsung - SM-G990E",
+        "os_version": 33,
+        "appearance": 32,
+        "app_language": "en"
+      }
+    },
+    {
+      "path": "/user_data/family_members",
+      "return": {
+        "family_members": [
+          {
+            "national_id": 0,
+            "name_en": "Name english",
+            "name_ar": "Name arabic",
+            "gender": 1,
+            "details_ar": {
+              "nationality": "Egypt",
+              "relation": "Son",
+              "passport_number": "A0012",
+              "date_of_birth": "01/01/1990",
+              "birth_city": "القاهرة"
+            },
+            "details_en": {
+              "nationality": "Egypt",
+              "relation": "Son",
+              "passport_number": "A0012",
+              "date_of_birth": "01/01/1990",
+              "birth_city": "Cairo"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "path": "/user_data/sponsors",
+      "return": {
+        "sponsors": [
+          {
+            "national_id": 0,
+            "name_en": "Name english",
+            "name_ar": "Name arabic",
+            "gender": 1,
+            "details_ar": {
+              "nationality": "Egypt",
+              "relation": "Son",
+              "passport_number": "A0012",
+              "date_of_birth": "01/01/1990",
+              "birth_city": "القاهرة"
+            },
+            "details_en": {
+              "nationality": "Egypt",
+              "relation": "Son",
+              "passport_number": "A0012",
+              "date_of_birth": "01/01/1990",
+              "birth_city": "Cairo"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

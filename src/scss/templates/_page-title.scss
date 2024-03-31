@@ -1,9 +1,10 @@
 .#{$prefix}page-title {
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 700;
   text-align: center;
   padding-block-start: spacing(2);
   padding-block-end: spacing(0.5);
+  padding-inline: spacing(2);
 }
 
 .#{$prefix}page-notes {
