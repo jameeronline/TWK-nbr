@@ -20155,6 +20155,20 @@ body,
 .ab-detailed-list__stack label {
   font-weight: 700;
 }
+.ab-detailed-list__inline label {
+  font-weight: 700;
+}
+.ab-detailed-list__spacebetween {
+  gap: 0.5em;
+}
+.ab-detailed-list__spacebetween li {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.25em;
+}
+.ab-detailed-list__spacebetween label {
+  font-weight: 700;
+}
 
 .ab-wizard__container {
   position: relative;

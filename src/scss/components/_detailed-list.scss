@@ -21,4 +21,23 @@
       font-weight: $font-weight-bold;
     }
   }
+
+  //Modifiers
+  &__inline {
+  }
+
+  //Modifiers
+  &__spacebetween {
+    gap: spacing(1);
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      gap: spacing(0.5);
+    }
+
+    label {
+      font-weight: $font-weight-bold;
+    }
+  }
 }
